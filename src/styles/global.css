@@ -1,0 +1,22 @@
+@import './tokens.css';
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito:wght@400;600;700&family=Poppins:wght@700;800&display=swap');
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-height) + 16px); }
+body { margin: 0; min-width: 320px; background: var(--surface); color: var(--on-surface); font-family: var(--font-body); font-size: 16px; line-height: 1.6; overflow-x: hidden; }
+img, svg { max-width: 100%; }
+button, input, textarea, select { font: inherit; }
+button, a { cursor: pointer; }
+button:disabled { cursor: not-allowed; opacity: 0.5; }
+:focus-visible { outline: 3px solid var(--yellow-500); outline-offset: 3px; }
+.skip-link { position: fixed; left: 16px; top: -100px; z-index: 1000; background: var(--yellow-500); color: var(--purple-900); border: 3px solid var(--ink); border-radius: 999px; padding: 10px 16px; font-weight: 800; }
+.skip-link:focus { top: 16px; }
+.foundationHero { min-height: 60vh; display: grid; place-content: center; padding: var(--space-xl); background: var(--purple-600); color: var(--white); text-align: center; }
+.foundationHero h1 { max-width: 900px; margin: 8px auto; font-family: var(--font-heading); font-size: clamp(3rem, 9vw, 8rem); line-height: 0.95; }
+.foundationHero p { max-width: 620px; margin-inline: auto; }
+.foundationKicker { display: inline-block; background: var(--yellow-500); color: var(--purple-900); border: 3px solid var(--ink); border-radius: 999px; padding: 6px 12px; font-family: var(--font-accent); font-weight: 700; }
+input,textarea,select{color-scheme:light;color:var(--ink);background:var(--white)}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}

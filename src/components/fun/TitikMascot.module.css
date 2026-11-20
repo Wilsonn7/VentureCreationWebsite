@@ -1,0 +1,10 @@
+.titik { --size: clamp(150px, 18vw, 220px); position: relative; width: var(--size); height: var(--size); border: 4px solid var(--ink); border-radius: 50%; background: var(--yellow-500); box-shadow: 10px 10px 0 var(--ink); touch-action: none; cursor: grab; }
+.titik:active { cursor: grabbing; }
+.face { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 20px; }
+.eye { position: relative; width: 42px; height: 50px; border: 4px solid var(--ink); border-radius: 50%; background: var(--white); }
+.eye span { position: absolute; width: 16px; height: 16px; left: 50%; top: 50%; margin: -8px 0 0 -8px; border-radius: 50%; background: var(--ink); }
+.ear { display: none; }
+.speech { position: absolute; width: 220px; left: 50%; bottom: calc(100% + 16px); transform: translateX(-50%) rotate(-2deg); border: 3px solid var(--ink); border-radius: 16px; background: var(--white); color: var(--ink); padding: 10px 12px; box-shadow: 4px 4px 0 var(--ink); font-family: var(--font-accent); font-weight: 700; }
+.mouth{position:absolute;z-index:4;left:50%;bottom:18%;width:36%;height:18%;transform:translateX(-50%);fill:none;stroke:var(--ink);stroke-width:4;stroke-linecap:round;stroke-linejoin:round;transition:.18s ease}
+.mouth ellipse{fill:var(--white)}
+@media (max-width: 680px) { .titik { --size: 130px; } }

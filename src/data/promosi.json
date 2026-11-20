@@ -1,0 +1,6 @@
+[
+  {"id":"feed","nama":"Post Feed","deskripsi":"Satu postingan informatif bergaya Publicles.","harga":"Hubungi untuk harga","fitur":["Ide copy","Penjadwalan","Laporan ringkas"]},
+  {"id":"story","nama":"Story","deskripsi":"Siaran singkat untuk update cepat.","harga":"Hubungi untuk harga","fitur":["Beberapa frame","Tautan","Waktu tayang"]},
+  {"id":"kampanye","nama":"Paket Kampanye","deskripsi":"Gabungan konten untuk kampanye layanan atau produk.","harga":"Hubungi untuk harga","fitur":["Perencanaan konten","Post atau Story","Koordinasi publikasi"]},
+  {"id":"kolaborasi","nama":"Kolaborasi Khusus","deskripsi":"Ide kerja sama yang disesuaikan dengan kebutuhanmu.","harga":"Hubungi untuk harga","fitur":["Konsep khusus","Jadwal fleksibel","Ruang kolaborasi"]}
+]

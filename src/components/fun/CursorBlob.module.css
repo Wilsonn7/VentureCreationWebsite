@@ -1,0 +1,1 @@
+.blob{position:fixed;left:-7px;top:-7px;z-index:1500;width:14px;height:14px;border:2px solid var(--ink);border-radius:50%;background:var(--yellow-500);opacity:.9;pointer-events:none}.click{left:-14px;top:-14px;width:28px;height:28px;border:2px solid var(--yellow-500);background:transparent}.hidden{display:none}

@@ -1,0 +1,26 @@
+.hero { position: relative; overflow: hidden; min-height: calc(100dvh - var(--header-height)); background: var(--purple-600); color: var(--white); }
+.orbit { position: absolute; width: 42vw; height: 42vw; max-width: 620px; max-height: 620px; border-radius: 50%; background: var(--purple-400); left: -12vw; bottom: -18vw; opacity: .7; }
+.orbitTwo { position: absolute; width: 34vw; height: 34vw; max-width: 480px; max-height: 480px; border-radius: 50%; background: var(--purple-700); right: -12vw; top: 10%; opacity: .8; }
+.inner { position: relative; z-index: var(--z-base); width: min(1180px, calc(100% - 32px)); min-height: calc(100dvh - var(--header-height)); margin-inline: auto; display: grid; grid-template-columns: 1fr 0.75fr; align-items: center; gap: var(--space-xl); }
+.copy h1 { margin: 0; font-family: var(--font-heading); font-size: clamp(3.2rem, 8vw, 7.5rem); line-height: .92; letter-spacing: -.04em; }
+.document { display: inline-block; color: var(--yellow-300); }
+.brand { white-space: nowrap; }
+.logoDot { color: var(--yellow-500); }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: var(--space-lg); }
+.primary, .secondary { min-height: 48px; display: inline-flex; align-items: center; gap: 8px; border: 3px solid var(--ink); border-radius: 999px; padding: 10px 18px; text-decoration: none; font-weight: 800; box-shadow: 4px 4px 0 var(--ink); transition: transform var(--duration-fast), box-shadow var(--duration-fast); }
+.primary { background: var(--yellow-500); color: var(--purple-900); }
+.secondary { background: var(--white); color: var(--purple-900); }
+.primary:active, .secondary:active { transform: translate(4px,4px); box-shadow: none; }
+.playground { position: relative; min-height: 430px; display: flex; align-items: center; justify-content: center; }
+.marquee { position: absolute; z-index: 3; left: -1%; right: -1%; bottom: -4px; height: 72px; overflow: hidden; border-top: 3px solid var(--ink); border-bottom: 3px solid var(--ink); transform: rotate(-1.5deg); font-family: var(--font-heading); font-weight: 800; }
+.marqueeRow { height: 36px; width: max-content; display: flex; }
+.marqueeTrack { flex: none; display: flex; align-items: center; gap: 18px; white-space: nowrap; padding-right: 18px; }
+.marqueeTrack svg { width: 12px; height: 12px; fill: currentColor; }
+.rowTop { background: var(--yellow-500); color: var(--purple-900); animation: rollLeft 18s linear infinite; }
+.rowBottom { background: var(--purple-900); color: var(--yellow-500); animation: rollRight 24s linear infinite; }
+.marquee[data-direction="reverse"] .marqueeRow { animation-direction: reverse; }
+.marquee:hover .marqueeRow { animation-duration: 45s; }
+@keyframes rollLeft { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@keyframes rollRight { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+@media (max-width: 860px) { .inner { grid-template-columns: 1fr; padding-top: 48px; padding-bottom: 84px; } .copy { text-align: center; } .actions { justify-content: center; } .playground { min-height: 330px; } .copy h1 { font-size: clamp(3.2rem, 16vw, 5.5rem); } }
+@media(prefers-reduced-motion:reduce){.marqueeRow{animation:none!important;justify-content:center;width:100%}.marqueeRow .marqueeTrack{display:none}.marqueeRow .marqueeTrack:first-child{display:flex}}

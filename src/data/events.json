@@ -1,0 +1,16 @@
+[
+  {
+    "id": "binus-festival-2026",
+    "nama": "BINUS Festival 2026",
+    "mulai": "2026-11-25T13:00:00+07:00",
+    "selesai": "2026-11-25T16:00:00+07:00",
+    "lokasi": {
+      "tempat": "BINUS Kemanggisan",
+      "gedung": "Kampus Anggrek (Gedung Anggrek)",
+      "lantai": "Lantai 2",
+      "meja": "Meja 10",
+      "mapsQuery": "BINUS Kampus Anggrek Kemanggisan"
+    },
+    "tagline": "Ketemu kami di BINUS Festival, 25 November!"
+  }
+]

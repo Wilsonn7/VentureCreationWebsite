@@ -1,0 +1,12 @@
+{
+  "WA_NUMBER": "6289652316604",
+  "WA_DISPLAY": "0896-5231-6604",
+  "instagram": "https://instagram.com/publicles",
+  "linktree": "https://linktr.ee/Publicles",
+  "links": [
+    {"id":"instagram","label":"Instagram @publicles","url":"https://instagram.com/publicles","icon":"instagram"},
+    {"id":"wa","label":"Chat WhatsApp","url":"","icon":"message-circle"},
+    {"id":"linktree","label":"Linktree asli Publicles","url":"https://linktr.ee/Publicles","icon":"external-link"},
+    {"id":"layanan","label":"Panduan layanan publik","url":"/#layanan","icon":"book-open"}
+  ]
+}

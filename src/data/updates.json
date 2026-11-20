@@ -1,0 +1,5 @@
+[
+  {"id":"ktp-biaya","jenis":"Tips","kategori":"KTP","judul":"Belum tahu dokumen KTP yang perlu dibawa?","ringkas":"Siapkan KK dan identitas pendukung sebelum berangkat, lalu cek alamat kantor Dukcapil setempat.","diperbarui":"2026-11-20","status":"perlu-verifikasi","sumber":{"nama":"Dukcapil Kemendagri","url":"https://dukcapil.kemendagri.go.id/"}},
+  {"id":"paspor-kanal","jenis":"Terverifikasi","kategori":"Paspor","judul":"Gunakan kanal resmi untuk permohonan paspor","ringkas":"Informasi jadwal dan pelayanan paspor sebaiknya dicek langsung dari situs atau kantor Imigrasi resmi.","diperbarui":"2026-11-20","status":"perlu-verifikasi","sumber":{"nama":"Ditjen Imigrasi","url":"https://www.imigrasi.go.id/"}},
+  {"id":"sim-persyaratan","jenis":"Perubahan penting","kategori":"SIM","judul":"Persyaratan SIM bisa berbeda menurut layanan","ringkas":"Pembuatan baru dan perpanjangan dapat membutuhkan alur berbeda. Konfirmasi ke Satpas setempat sebelum berangkat.","diperbarui":"2026-11-20","status":"perlu-verifikasi","sumber":{"nama":"Korps Lalu Lintas Polri","url":"https://korlantas.polri.go.id/"}}
+]

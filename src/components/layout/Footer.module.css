@@ -1,0 +1,5 @@
+.footer { background: var(--purple-900); color: var(--white); border-top: 3px solid var(--ink); }
+.inner { width: min(1180px, calc(100% - 32px)); margin-inline: auto; padding: var(--space-xl) 0; display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--space-md); }
+.logo { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; }
+.dot { color: var(--yellow-500); }
+.note { max-width: 520px; }

@@ -1,0 +1,1 @@
+.track{position:fixed;z-index:1100;left:0;right:0;top:0;height:5px;background:transparent}.fill{position:relative;height:100%;background:var(--yellow-500)}.fill span{position:absolute;right:-10px;top:-7px;width:20px;height:20px;border:2px solid var(--ink);border-radius:50%;background:var(--yellow-500)}

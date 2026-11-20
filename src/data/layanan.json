@@ -1,0 +1,62 @@
+[
+  {
+    "id":"ktp",
+    "nama":"KTP",
+    "ringkas":"Kartu Tanda Penduduk elektronik",
+    "syarat":[
+      "Sudah berusia 17 tahun, atau sudah/pernah menikah",
+      "Fotokopi KK atau dokumen kependudukan yang masih berlaku",
+      "Surat keterangan kehilangan kepolisian, hanya jika KTP hilang",
+      "Datang ke Dinas Kependudukan dan Catatan Sipil atau lokasi Dukcapil yang ditentukan"
+    ],
+    "langkah":[
+      {"judul":"Siapkan dokumen","detail":"Pastikan KK dan dokumen pendukung tersedia."},
+      {"judul":"Datang ke loket","detail":"Ambil antrean sesuai petunjuk petugas Dukcapil setempat."},
+      {"judul":"Ambil foto dan rekam sidik jari","detail":"Ikuti proses perekaman yang dilakukan petugas."},
+      {"judul":"Cek jadwal cetak","detail":"Tanyakan jadwal pencetakan atau pengambilan hasil."}
+    ],
+    "biaya":{"teks":"Umumnya tidak dipungut biaya untuk penerbitan KTP elektronik; biaya tambahan hanya dapat berlaku untuk layanan khusus.","terverifikasi":false},
+    "masalah":[
+      {"kasus":"KTP hilang","solusi":"Bawa KK dan surat kehilangan dari kepolisian, lalu ikuti prosedur penerbitan pengganti."},
+      {"kasus":"Data tidak sesuai","solusi":"Sampaikan koreksi data kepada petugas Dukcapil dan siapkan bukti pendukung."}
+    ],
+    "sumber":[
+      {"nama":"Dukcapil Kemendagri - Syarat dan Prosedur Layanan Pendaftaran Penduduk","url":"https://dukcapil.kemendagri.go.id/files/2023/1680205930Syarat%20dan%20Prosedur%20Layanan%20Pendaftaran%20Penduduk.pdf"}
+    ],
+    "diperbarui":"2026-11-20",
+    "dicekTanggal":"2026-11-20",
+    "status":"terverifikasi-sebagian"
+  },
+  {
+    "id":"kk",
+    "nama":"KK",
+    "ringkas":"Kartu Keluarga",
+    "syarat":["Buku nikah atau akta perkawinan untuk perubahan karena perkawinan","Akta kelahiran untuk penambahan anggota keluarga","Identitas kepala keluarga dan anggota keluarga"],
+    "langkah":[
+      {"judul":"Siapkan bukti keluarga","detail":"Kumpulkan dokumen sesuai jenis perubahan yang dibutuhkan."},
+      {"judul":"Ajukan perubahan","detail":"Datang ke Dukcapil sesuai domisili atau gunakan kanal resmi yang tersedia."},
+      {"judul":"Periksa hasil cetak","detail":"Pastikan semua nama dan data keluarga sudah benar."}
+    ],
+    "biaya":{"teks":"Umumnya penerbitan atau perubahan KK tidak dipungut biaya.","terverifikasi":false},
+    "masalah":[
+      {"kasus":"Ada anggota keluarga yang belum tercatat","solusi":"Siapkan dokumen kelahiran atau bukti hubungan keluarga dan ajukan penambahan."},
+      {"kasus":"KK hilang","solusi":"Siapkan surat keterangan hilang dari kepolisian, lalu ajukan penerbitan pengganti ke Dukcapil."},
+      {"kasus":"KK rusak","solusi":"Bawa KK yang rusak ke Dukcapil untuk dicetak ulang."}
+    ],
+    "sumber":[
+      {"nama":"Dukcapil Kemendagri - Syarat dan Prosedur Layanan Pendaftaran Penduduk","url":"https://dukcapil.kemendagri.go.id/files/2023/1680205930Syarat%20dan%20Prosedur%20Layanan%20Pendaftaran%20Penduduk.pdf"}
+    ],
+    "diperbarui":"2026-11-20",
+    "dicekTanggal":"2026-11-20",
+    "status":"terverifikasi-sebagian"
+  },
+  {
+    "id":"sim","nama":"SIM","ringkas":"Surat Izin Mengemudi","syarat":["Identitas kependudukan yang masih berlaku","Bukti telah lulus ujian SIM sesuai jenis izin","Kesehatan jasmani dan rohani sesuai ketentuan"],"langkah":[{"judul":"Siapkan berkas","detail":"Periksa masa berlaku identitas dan persyaratan jenis SIM."},{"judul":"Daftar dan lakukan cek kesehatan","detail":"Ikuti alur pendaftaran yang ditetapkan Satuan Penyelenggara Administrasi SIM."},{"judul":"Ikuti ujian","detail":"Ikuti ujian teori atau praktik sesuai golongan SIM."},{"judul":"Ambil SIM","detail":"Ikuti petunjuk pencetakan dan pengambilan hasil."}],"biaya":{"teks":"Besaran biaya penerbitan atau perpanjangan mengikuti peraturan dan tarif resmi yang berlaku.","terverifikasi":false},"masalah":[{"kasus":"SIM mendekati masa berlaku","solusi":"Cek jadwal dan persyaratan perpanjangan melalui kanal resmi Satpas setempat."}],"sumber":[{"nama":"Korps Lalu Lintas Polri","url":"https://korlantas.polri.go.id/"}],"diperbarui":"2026-11-20","dicekTanggal":null,"status":"perlu-verifikasi"
+  },
+  {
+    "id":"paspor","nama":"Paspor","ringkas":"Dokumen perjalanan Republik Indonesia","syarat":["KTP elektronik atau bukti kependudukan yang berlaku","Akta kelahiran, ijazah, atau bukti identitas pendukung sesuai kebutuhan","KK dan akta perkawinan atau akta cerai jika dibutuhkan"],"langkah":[{"judul":"Isi permohonan","detail":"Isi permohonan melalui kanal resmi Imigrasi."},{"judul":"Pilih jadwal","detail":"Tentukan kantor imigrasi dan jadwal kedatangan yang tersedia."},{"judul":"Datang untuk biometrik","detail":"Bawa dokumen asli dan ikuti wawancara serta perekaman."},{"judul":"Ambil paspor","detail":"Ikuti jadwal pencetakan dan pengambilan yang diberikan."}],"biaya":{"teks":"Besaran biaya tergantung jenis paspor dan masa berlaku yang dipilih berdasarkan tarif resmi.","terverifikasi":false},"masalah":[{"kasus":"Berkas belum lengkap","solusi":"Periksa notifikasi permohonan atau tanya petugas melalui kontak resmi kantor imigrasi."}],"sumber":[{"nama":"Ditjen Imigrasi","url":"https://www.imigrasi.go.id/"}],"diperbarui":"2026-11-20","dicekTanggal":null,"status":"perlu-verifikasi"
+  },
+  {
+    "id":"akta","nama":"Akta Lahir","ringkas":"Bukti pencatatan kelahiran","syarat":["Surat keterangan lahir dari fasilitas kesehatan atau pejabat berwenang","Identitas orang tua yang masih berlaku","Buku nikah atau akta perkawinan sebagai bukti hubungan keluarga"],"langkah":[{"judul":"Siapkan bukti kelahiran","detail":"Pastikan surat lahir atau dokumen setempat sudah lengkap."},{"judul":"Ajukan pencatatan","detail":"Datang ke Dinas Dukcapil sesuai kewenangan domisili."},{"judul":"Periksa akta cetak","detail":"Pastikan nama, tempat lahir, tanggal lahir, dan nama orang tua benar."}],"biaya":{"teks":"Pencatatan kelahiran dalam tenggat waktu yang ditetapkan umumnya tidak dipungut biaya; cek aturan setempat.","terverifikasi":false},"masalah":[{"kasus":"Nama atau tanggal lahir salah","solusi":"Ajukan koreksi sesuai prosedur Dukcapil dan siapkan dokumen pendukung."}],"sumber":[{"nama":"Dukcapil Kemendagri","url":"https://dukcapil.kemendagri.go.id/"}],"diperbarui":"2026-11-20","dicekTanggal":null,"status":"perlu-verifikasi"
+  }
+]
