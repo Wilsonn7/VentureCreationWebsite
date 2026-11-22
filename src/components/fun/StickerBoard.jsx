@@ -11,13 +11,31 @@ export default function StickerBoard() {
   const reduced = useReducedMotion();
 
   useEffect(() => {
-    if (reduced || !board.current) return;
-    const list = Draggable.create(board.current.querySelectorAll('[data-sticker]'), {
-      type:'x,y', bounds:board.current, inertia:true,
-      onPress:function(){ this.target.dataset.dragging='true'; gsap.to(this.target,{scale:1.06,zIndex:20,duration:.15}); },
-      onRelease:function(){ delete this.target.dataset.dragging; gsap.to(this.target,{scale:1,zIndex:1,duration:.25}); },
-    });
-    return () => list.forEach((item) => item.kill());
+    const mobileQuery = window.matchMedia('(max-width: 768px)');
+    let list = [];
+
+    const setup = () => {
+      list.forEach((item) => item.kill());
+      list = [];
+      if (!board.current) return;
+      list = Draggable.create(board.current.querySelectorAll('[data-sticker]'), {
+        type:'x,y', bounds:board.current, inertia:true,
+        onPress:function(){ this.target.dataset.dragging='true'; gsap.to(this.target,{scale:1.06,zIndex:20,duration:.15}); },
+        onRelease:function(){ delete this.target.dataset.dragging; gsap.to(this.target,{scale:1,zIndex:1,duration:.25}); },
+      });
+    };
+
+    if (reduced) return;
+    setup();
+    if (mobileQuery.matches) {
+      window.addEventListener('resize', setup, { passive: true });
+      mobileQuery.addEventListener?.('change', setup);
+    }
+    return () => {
+      list.forEach((item) => item.kill());
+      window.removeEventListener('resize', setup);
+      mobileQuery.removeEventListener?.('change', setup);
+    };
   }, [reduced]);
 
   const randomize = () => {
@@ -28,8 +46,11 @@ export default function StickerBoard() {
     const pattern = patterns[index];
     const items = [...board.current.querySelectorAll('[data-sticker]')];
     const rect = board.current.getBoundingClientRect();
-    const cardW = rect.width < 420 ? 130 : 160;
-    const cardH = rect.width < 420 ? 94 : 110;
+    const firstItem = items[0];
+    const itemRect = firstItem?.getBoundingClientRect();
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    const cardW = isMobile ? Math.min(itemRect?.width || rect.width * .44, rect.width * .44) : (rect.width < 420 ? 130 : 160);
+    const cardH = isMobile ? (itemRect?.height || 94) : (rect.width < 420 ? 94 : 110);
     const cx = rect.width / 2 - cardW / 2;
     const cy = rect.height / 2 - cardH / 2;
     const placed = [];

@@ -3,3 +3,8 @@
 .logo { font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; }
 .dot { color: var(--yellow-500); }
 .note { max-width: 520px; }
+
+@media (max-width: 768px) {
+  .footer { --float-stack-h: 168px; padding-bottom: calc(var(--float-stack-h) + 24px + env(safe-area-inset-bottom)); }
+  .inner { width: calc(100% - 32px); }
+}

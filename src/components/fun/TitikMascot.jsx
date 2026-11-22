@@ -55,7 +55,8 @@ export default function TitikMascot() {
 
   useEffect(() => {
     if (!root.current || reduced) return;
-    const instance = Draggable.create(root.current, {
+    const mobileQuery = window.matchMedia('(max-width: 768px)');
+    let instance = Draggable.create(root.current, {
       type: 'x,y',
       inertia: true,
       bounds: '.heroPlayground',
@@ -65,7 +66,27 @@ export default function TitikMascot() {
         gsap.to(root.current, { x: 0, y: 0, duration: 0.8, ease: 'elastic.out(1,0.45)' });
       },
     });
-    return () => instance.forEach((item) => item.kill());
+    const setup = () => {
+      instance.forEach((item) => item.kill());
+      instance = Draggable.create(root.current, {
+        type: 'x,y',
+        inertia: true,
+        bounds: '.heroPlayground',
+        onPress: () => setMouth('o'),
+        onDragEnd: function () {
+          setMouth('normal');
+          gsap.to(root.current, { x: 0, y: 0, duration: 0.8, ease: 'elastic.out(1,0.45)' });
+        },
+      });
+    };
+    setup();
+    window.addEventListener('resize', setup, { passive: true });
+    mobileQuery.addEventListener?.('change', setup);
+    return () => {
+      instance.forEach((item) => item.kill());
+      window.removeEventListener('resize', setup);
+      mobileQuery.removeEventListener?.('change', setup);
+    };
   }, [reduced]);
 
   const handleClick = () => {

@@ -8,3 +8,7 @@
 .mouth{position:absolute;z-index:4;left:50%;bottom:18%;width:36%;height:18%;transform:translateX(-50%);fill:none;stroke:var(--ink);stroke-width:4;stroke-linecap:round;stroke-linejoin:round;transition:.18s ease}
 .mouth ellipse{fill:var(--white)}
 @media (max-width: 680px) { .titik { --size: 130px; } }
+@media (max-width: 768px) {
+  .titik { --size: 120px; flex: none; }
+  .speech { width: min(220px, calc(100vw - 32px)); }
+}

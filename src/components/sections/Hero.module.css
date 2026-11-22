@@ -23,4 +23,17 @@
 @keyframes rollLeft { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 @keyframes rollRight { from { transform: translateX(-50%); } to { transform: translateX(0); } }
 @media (max-width: 860px) { .inner { grid-template-columns: 1fr; padding-top: 48px; padding-bottom: 84px; } .copy { text-align: center; } .actions { justify-content: center; } .playground { min-height: 330px; } .copy h1 { font-size: clamp(3.2rem, 16vw, 5.5rem); } }
+@media (max-width: 768px) {
+  html, body { overflow-x: clip; }
+  .hero { min-height: calc(100dvh - var(--header-height)); overflow: hidden; }
+  .inner { width: calc(100% - 32px); max-width: 736px; min-height: calc(100dvh - var(--header-height)); grid-template-columns: 1fr; align-content: start; gap: 20px; padding-top: 96px; padding-bottom: 96px; }
+  .copy { min-width: 0; text-align: center; }
+  .copy h1 { font-size: clamp(2.25rem, 11vw, 3.5rem); line-height: 1.02; letter-spacing: -.025em; overflow-wrap: anywhere; }
+  .brand { white-space: normal; }
+  .actions { width: 100%; justify-content: center; gap: 12px; margin-top: 20px; }
+  .primary, .secondary { max-width: 100%; min-height: 44px; }
+  .playground { width: 100%; min-width: 0; min-height: 0; flex-direction: column; gap: 12px; }
+  .marquee { height: 64px; }
+  .marqueeRow { height: 32px; }
+}
 @media(prefers-reduced-motion:reduce){.marqueeRow{animation:none!important;justify-content:center;width:100%}.marqueeRow .marqueeTrack{display:none}.marqueeRow .marqueeTrack:first-child{display:flex}}
